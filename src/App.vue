@@ -1,17 +1,22 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Synonyms msg="Check 1 2"/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Synonyms from './components/Synonyms.vue'
+
+
 
 export default {
+  methods: {
+  
+},
   name: 'app',
   components: {
-    HelloWorld
+    Synonyms
   }
 }
 </script>
