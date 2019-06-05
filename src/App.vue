@@ -13,7 +13,6 @@
   </div>
 </template>
 <script>
-import apiKey from "../apiKey.js";
 export default {
   name: "app",
   methods: {
@@ -43,7 +42,7 @@ export default {
       }
     },
     fetchSynonyms: async function(word) {
-      let url = `https://www.dictionaryapi.com/api/v3/references/thesaurus/json/${word}?key=${apiKey}`;
+      let url = `https://www.dictionaryapi.com/api/v3/references/thesaurus/json/${word}?key=${process.env.VUE_APP_APIKEY}`;
       return await fetch(url);
     },
     check: async function(e, value) {
