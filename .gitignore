@@ -20,6 +20,6 @@ yarn-error.log*
 *.sln
 *.sw?
 
-.api-key.js
+.apiKey.js
 
-src/api-key.js
+apiKey.js
